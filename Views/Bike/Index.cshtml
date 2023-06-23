@@ -1,0 +1,36 @@
+﻿@model List<MVCNEW.Models.Domain.Bike>
+
+@{
+}
+
+<h1>Bikes</h1>
+<table class="table">
+    <thead>
+        <tr>            
+            <th>Brand</th>
+            <th>Model Name</th> 
+            <th>CC</th>
+            <th>Bhp</th>
+            <th>Torque</th>
+            <th> </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var bike in Model)
+        {
+            <tr>                
+                <td>@bike.Brand</td>
+                <td>@bike.ModelNum</td>
+                <td>@bike.CC</td>
+                <td>@bike.Bhp</td>
+                <td>@bike.Torque</td>
+                <td>
+                    <a asp-area=""
+                   asp-controller="Bike"
+                   asp-action="View" asp-route-id="@bike.Id">Edit</a>
+                </td>
+
+            </tr>
+        }
+    </tbody>
+</table>

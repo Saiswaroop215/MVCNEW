@@ -1,0 +1,30 @@
+﻿@model MVCNEW.Models.AddBikeViewModel
+
+@{
+}
+
+<h1>Add Bike</h1>
+<form method="post" action="AddBike" class="mt-5">
+    <div class="mb-3">
+        <label for="" class="form-label">Brand</label>
+        <input type="text" class="form-control" asp-for="Brand">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Model Number</label>
+        <input type="text" class="form-control" asp-for="ModelNum">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">CC</label>
+        <input type="number" class="form-control" asp-for="CC">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Bhp</label>
+        <input type="number" class="form-control" asp-for="Bhp">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Torque</label>
+        <input type="number" class="form-control" asp-for="Torque">
+    </div>
+
+    <button type="submit" class="btn btn-primary">Insert</button>
+</form>

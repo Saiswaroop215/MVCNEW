@@ -1,0 +1,39 @@
+﻿@model MVCNEW.Models.UpdateBikeViewModel
+
+@{
+}
+
+<h1>Edit Bike</h1>
+<form method="post" action="View" class="mt-5">
+    <div class="mb-3">
+        <label for="" class="form-label">Id</label>
+        <input type="text" class="form-control" asp-for="Id" readonly>
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Brand</label>
+        <input type="text" class="form-control" asp-for="Brand">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Model Number</label>
+        <input type="text" class="form-control" asp-for="ModelNum">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">CC</label>
+        <input type="number" class="form-control" asp-for="CC">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Bhp</label>
+        <input type="number" class="form-control" asp-for="Bhp">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Torque</label>
+        <input type="number" class="form-control" asp-for="Torque">
+    </div>
+
+    <button type="submit" class="btn btn-primary" asp-action="">Update</button>
+
+    <button type="submit" class="btn btn-danger" 
+    asp-action="Delete"
+    asp-controller="Bike">Delete</button>
+
+</form>
